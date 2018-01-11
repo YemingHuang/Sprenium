@@ -25,12 +25,30 @@
         </div>
     </div>
 </nav>
+
 <div class="container">
 
-    <div id="title">
-        <h1>Spring Boot Web JSP Example</h1>
-        <h2>Message: ${message}</h2>
-    </div>
+    <h1>
+        These are my things
+    </h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+            <c:forEach items="${things}" var="thing">
+                <tr>
+                    <td><c:out value="${thing.name}" /></td>
+                    <td><c:out value="${thing.description}" /></td>
+                </tr>
+            </c:forEach>
+        </tbody>
+
+    </table>
 
 </div>
 
