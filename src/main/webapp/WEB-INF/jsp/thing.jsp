@@ -81,7 +81,7 @@
                                     <form:input path="description" type="text" />
                                 </div>
                                 <div class="col-sm-3">
-                                    <input type = "submit" value = "Submit" />
+                                    <input id="newThingSubmit" type = "submit" value = "Submit" />
                                 </div>
                             </div>
                         </div>

@@ -42,4 +42,29 @@ public class ThingIntegrationTest {
 
     }
 
+    @Test
+    public void addNewModal() {
+
+        String name = "wow";
+        String description = "much descriptive";
+
+        // Click open the modal
+        driver.findElement(By.id("addNew")).click();
+
+        // Fill in the form
+        driver.findElement(By.xpath("//input[@id='name']")).sendKeys(name);
+        driver.findElement(By.xpath("//input[@id='description']")).sendKeys(description);
+
+        // Click
+        driver.findElement(By.xpath("//input[@id='newThingSubmit']")).click();
+
+        // Verify
+        assertThat(driver.findElement(By.xpath("//table[@id='thingTable']/tbody/tr[position()=3]/td[position()=1]"))
+                .getText()).isEqualTo(name);
+        assertThat(driver.findElement(By.xpath("//table[@id='thingTable']/tbody/tr[position()=3]/td[position()=2]"))
+                .getText()).isEqualTo(description);
+
+
+    }
+
 }
