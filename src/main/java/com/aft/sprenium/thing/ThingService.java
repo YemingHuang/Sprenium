@@ -14,4 +14,8 @@ public class ThingService {
     List<Thing> getThings() {
         return repository.getAll();
     }
+
+    void add(Thing thing) {
+        repository.add(thing);
+    }
 }

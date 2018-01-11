@@ -16,7 +16,7 @@
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">Spring Boot</a>
+            <a class="navbar-brand" href="/">Sprenium</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -50,6 +50,46 @@
         </tbody>
 
     </table>
+
+    <button id="addNew" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newThingModal">Add New</button>
+
+    <!-- Modal -->
+    <div id="newThingModal" class="modal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add New</h4>
+                </div>
+                <div class="modal-body">
+                    <form action = "/thing/add" method = "POST">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3">Name: </div>
+                                <div class="col-sm-3">Description</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <input type = "text" name = "name">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type = "text" name = "description" />
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type = "submit" value = "Submit" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </div>
 

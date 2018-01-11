@@ -34,4 +34,12 @@ public class ThingIntegrationTest {
 
     }
 
+    @Test
+    public void newThingModalShows() {
+        driver.findElement(By.id("addNew")).click();
+        assertThat(driver.findElement(By.xpath("//div[@class='modal-header']/h4"))
+                .getText()).isEqualTo("Add New");
+
+    }
+
 }
