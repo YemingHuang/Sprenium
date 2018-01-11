@@ -23,6 +23,7 @@ public class SeleniumTestExecutionListener extends AbstractTestExecutionListener
 
     static {
         System.setProperty("webdriver.chrome.driver", "bin/chromedriver");
+        System.setProperty("phantomjs.binary.path", "bin/phantomjs");
     }
 
     private WebDriver webDriver;
