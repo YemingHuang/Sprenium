@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
 <html lang="en">
 <head>
     <title>Sprenium Things</title>
@@ -64,8 +66,8 @@
                     <h4 class="modal-title">Add New</h4>
                 </div>
                 <div class="modal-body">
-                    <form action = "/thing/add" method = "POST">
 
+                    <form:form method="post" modelAttribute="newThing" action="/thing/add">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-3">Name: </div>
@@ -73,18 +75,18 @@
                             </div>
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <input type = "text" name = "name">
+                                    <form:input path="name" type="text" />
                                 </div>
                                 <div class="col-sm-3">
-                                    <input type = "text" name = "description" />
+                                    <form:input path="description" type="text" />
                                 </div>
                                 <div class="col-sm-3">
                                     <input type = "submit" value = "Submit" />
                                 </div>
                             </div>
                         </div>
+                    </form:form>
 
-                    </form>
                 </div>
             </div>
 
