@@ -21,6 +21,10 @@ import static org.springframework.core.annotation.AnnotationUtils.findAnnotation
 @Configuration
 public class SeleniumTestExecutionListener extends AbstractTestExecutionListener {
 
+    static {
+        System.setProperty("webdriver.chrome.driver", "bin/chromedriver");
+    }
+
     private WebDriver webDriver;
 
     public int getOrder() {

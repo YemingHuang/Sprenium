@@ -1,7 +1,6 @@
 package com.aft.sprenium.welcome;
 
 import com.aft.sprenium.support.SeleniumTest;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
@@ -17,15 +16,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(properties = "server.port=9000", webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @SeleniumTest(driver = ChromeDriver.class, baseUrl = "http://localhost:9000")
-public class WelcomeControllerIntegrationTest {
+public class WelcomeIntegrationTest {
 
     @Autowired
     private WebDriver driver;
-
-    @BeforeClass
-    public static void setUp() {
-        System.setProperty("webdriver.chrome.driver", "bin/chromedriver");
-    }
 
     @Test
     public void correctWelcomeMessage() {
