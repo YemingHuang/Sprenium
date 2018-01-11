@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en">
 <head>
-
+    <title>Sprenium Home</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/css/bootstrap.min.css" />
 
     <script type="text/javascript" src="webjars/jquery/jquery.min.js"></script>
@@ -27,7 +27,7 @@
 </nav>
 <div class="container">
 
-    <div id="title">
+    <div id="welcomeMessage">
         <h1>Spring Boot Web JSP Example</h1>
         <h2>Message: ${message}</h2>
     </div>
