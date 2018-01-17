@@ -1,6 +1,6 @@
-package com.aft.sprenium.welcome;
+package yeminghuang.sprenium.welcome;
 
-import com.aft.sprenium.support.SeleniumTest;
+import yeminghuang.sprenium.support.SeleniumTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;

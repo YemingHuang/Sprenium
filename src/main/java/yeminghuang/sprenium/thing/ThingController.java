@@ -1,4 +1,4 @@
-package com.aft.sprenium.thing;
+package yeminghuang.sprenium.thing;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

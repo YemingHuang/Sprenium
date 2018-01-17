@@ -1,4 +1,4 @@
-package com.aft.sprenium.support;
+package yeminghuang.sprenium.support;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

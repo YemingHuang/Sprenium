@@ -1,4 +1,4 @@
-package com.aft.sprenium;
+package yeminghuang.sprenium;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
